@@ -1,0 +1,27 @@
+{
+  "name": "ng-demo-album-list",
+  "version": "1.0.0",
+  "description": "Demo app presenting list of albums",
+  "main": "index.html",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moreawarefly/ng-demo-album-list.git"
+  },
+  "author": "Marcin Skawiński",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moreawarefly/ng-demo-album-list/issues"
+  },
+  "homepage": "https://github.com/moreawarefly/ng-demo-album-list#readme",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "run-sequence": "^1.2.2"
+  }
+}

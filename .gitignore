@@ -1,3 +1,8 @@
+#custom ignore entries
+.tmp
+ng-demo-album-list.sublime-project
+ng-demo-album-list.sublime-workspace
+
 # Logs
 logs
 *.log
