@@ -33,10 +33,11 @@ function initTmpDir() {
     /* required because gulp prior to 4.0v is not able to run tasks in sequence */
     runSequence('cleanTmpDir', 'populateTmpDir');
 }
-
 function populateTmpDir() {
-    gulp.src('src/*.html').
-        pipe(gulp.dest('.tmp/'));
+    gulp.src([
+        'src/**/*',
+        '!src/css/**/*.scss',
+    ]).pipe(gulp.dest('.tmp/'));
 }
 
 function cleanTmpDir() {
