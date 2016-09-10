@@ -6,20 +6,21 @@ const sourcemaps = require('gulp-sourcemaps');
 const connect = require('gulp-connect');
 
 
-gulp.task('default', [
+gulp.task('default', ['devServer']);
+
+gulp.task('devServer', [
     'initTmpDir',
     'transpileScss',
     'watch',
     'serveTmp',
+    'serveMock',
 ]);
-
-/* required because gulp prior to 4.0v is not able to run tasks in sequence */
 gulp.task('initTmpDir', initTmpDir);
-
 gulp.task('populateTmpDir', populateTmpDir);
 gulp.task('cleanTmpDir', cleanTmpDir);
 gulp.task('transpileScss', transpileScss);
 gulp.task('serveTmp', serveTmp);
+gulp.task('serveMock', serveMock);
 gulp.task('reload', reload);
 gulp.task('watchHtml', watchHtml);
 gulp.task('watchSass', watchSass);
@@ -29,6 +30,7 @@ gulp.task('watch', [
 ]);
 
 function initTmpDir() {
+    /* required because gulp prior to 4.0v is not able to run tasks in sequence */
     runSequence('cleanTmpDir', 'populateTmpDir');
 }
 
@@ -54,6 +56,13 @@ function serveTmp() {
         port: 9000,
         root: '.tmp',
         livereload: true,
+    });
+}
+function serveMock() {
+    connect.server({
+        port: 9001,
+        root: 'mock',
+        index: 'albums.json',
     });
 }
 
