@@ -1,6 +1,4 @@
 const gulp = require('gulp');
-const del = require('del');
-const runSequence = require('run-sequence');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const connect = require('gulp-connect');
@@ -9,15 +7,13 @@ const connect = require('gulp-connect');
 gulp.task('default', ['devServer']);
 
 gulp.task('devServer', [
-    'initTmpDir',
+    'populateTmpDir',
     'transpileScss',
     'watch',
     'serveTmp',
     'serveMock',
 ]);
-gulp.task('initTmpDir', initTmpDir);
 gulp.task('populateTmpDir', populateTmpDir);
-gulp.task('cleanTmpDir', cleanTmpDir);
 gulp.task('transpileScss', transpileScss);
 gulp.task('serveTmp', serveTmp);
 gulp.task('serveMock', serveMock);
@@ -29,19 +25,11 @@ gulp.task('watch', [
     'watchSass',
 ]);
 
-function initTmpDir() {
-    /* required because gulp prior to 4.0v is not able to run tasks in sequence */
-    runSequence('cleanTmpDir', 'populateTmpDir');
-}
 function populateTmpDir() {
     gulp.src([
         'src/**/*',
         '!src/css/**/*.scss',
     ]).pipe(gulp.dest('.tmp/'));
-}
-
-function cleanTmpDir() {
-    return del('./.tmp');
 }
 
 function transpileScss() {
