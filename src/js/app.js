@@ -13,21 +13,11 @@
     appConfig.$inject = ['$routeProvider'];
 
     function appConfig($routeProvider) {
-        $routeProvider.when('/', {
+        $routeProvider.when('/albums', {
+            templateUrl: 'albums.html',
+        }).otherwise({
             templateUrl: 'intro.html',
             action: 'DashboardApp.DashboardCtrl',
         });
-    }
-})();
-
-(() => {
-    angular.
-        module('Intro').
-        controller('IntroController', IntroController);
-
-    function IntroController() {
-        const vm = this;
-
-        vm.test = 'test!';
     }
 })();
