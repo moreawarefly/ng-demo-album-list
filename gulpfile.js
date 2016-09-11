@@ -7,7 +7,7 @@ const templateCache = require('gulp-angular-templatecache');
 const es = require('event-stream');
 const cors = (req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
-    next();
+    setTimeout(next, 1000);
 };
 
 gulp.task('default', ['devServer']);
