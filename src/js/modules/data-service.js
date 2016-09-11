@@ -13,7 +13,7 @@ function dataservice($http, $log) {
             catch(getAlbumsError);
 
         function getAlbumsSuccess(response) {
-            return response.data;
+            return response.data.topalbums.album;
         }
 
         function getAlbumsError(error) {

@@ -8,7 +8,8 @@
     function AlbumsController(dataservice) {
         const vm = this;
 
-        vm.test = 'test!';
-        vm.albums = dataservice.getAlbums();
+        dataservice.getAlbums().then((response) => {
+            vm.albums = response;
+        });
     }
 })();

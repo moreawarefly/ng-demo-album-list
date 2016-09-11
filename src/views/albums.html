@@ -4,17 +4,33 @@
     <form class="sorting-form">
         <label for="sorting-form-order-by-select">Order by:</label>
         <select name="sorting-form-order-by-select">
-            <option value="red">Artist name</option>
-            <option value="yellow">Album title</option>
-            <option value="purple">Release date</option>
+            <option value="artist.name">Artist name</option>
+            <option value="name">Album title</option>
+            <option value="playcount">TODORelease date</option>
         </select>
         <label>Sorting order:</label>
-        <button class="sorting-form-order-asc-button"></button>
-        <button class="sorting-form-order-desc-button"></button>
+        <button class="sorting-form-order-button">
+            <svg width="20" height="20" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><path d="M 96.00,96.00l-96.00,96.00l 256.00,256.00l 256.00-256.00l-96.00-96.00L 256.00,256.00L 96.00,96.00z" ></path></svg>
+        </button>
     </form>
 
     <h3>Albums list:</h3>
     <div class="albums-list-container">
-        {{ ::albums.albums}}
+        <div class="album-list-album-container" ng-repeat="album in albums.albums">
+            <a href="{{ ::album.url }}">
+                <img class="album-list-album-cover" src="{{ ::album.image[2].text }}" alt="{{ ::album.name }}">
+            </a>
+            <div class="album-list-album-details">
+                <h4 class="album-list-album-title">
+                    <a href="{{ ::album.url }}" target="_blank">{{ ::album.name }}</a>
+                </h4>
+                <h5 class="album-list-album-artist">
+                    By <a href="{{ ::album.artist.url }}" target="_blank">{{ ::album.artist.name }}</a>
+                </h5>
+                <h6 class="album-list-album-release-date">
+                    Released TODO {{ ::album.playcount }}
+                </h6>
+            </div>
+        </div>
     </div>
 </div>
