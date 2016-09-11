@@ -1,4 +1,8 @@
-.sorting-form-order-desc-button {
-    border: 1px solid black;
-    background-color: #ccc;
-}
+// variables
+@import 'variables';
+
+// common styles
+@import 'common';
+
+//views
+@import 'view-albums';

@@ -1,0 +1,28 @@
+.albums-header {
+    margin: 0 20px;
+}
+.albums-view {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+.albums-list {
+    flex: 1;
+    overflow: auto;
+}
+.order-button {
+    border: none;
+    background-color: $white;
+    -webkit-appearance: none;
+    outline: none;
+}
+.order-button-background {
+    width: 20px;
+    height: 20px;
+    fill: $black;
+    transition: transform .05s;
+    transform: rotate(180deg);
+    &.reversed {
+        transform: none;
+    }
+}
