@@ -5,7 +5,10 @@ const connect = require('gulp-connect');
 const concat = require('gulp-concat');
 const templateCache = require('gulp-angular-templatecache');
 const es = require('event-stream');
-
+const cors = (req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    next();
+};
 
 gulp.task('default', ['devServer']);
 
@@ -75,6 +78,7 @@ function serveMock() {
         port: 9001,
         root: 'mock',
         index: 'albums.json',
+        middleware: () => [cors],
     });
 }
 
