@@ -24,9 +24,11 @@ gulp.task('serveTmp', serveTmp);
 gulp.task('serveMock', serveMock);
 gulp.task('reload', reload);
 gulp.task('watchHtml', watchHtml);
+gulp.task('watchAngular', watchAngular);
 gulp.task('watchSass', watchSass);
 gulp.task('watch', [
     'watchHtml',
+    'watchAngular',
     'watchSass',
 ]);
 
@@ -85,6 +87,13 @@ function watchHtml() {
     gulp.watch([
         './src/*.html',
     ], ['populateTmpDir', 'reload']);
+}
+
+function watchAngular() {
+    gulp.watch([
+        './src/js/**/*.js',
+        './src/views/**/*.html',
+    ], ['concatJs', 'reload']);
 }
 
 function watchSass() {
