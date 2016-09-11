@@ -2,17 +2,22 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const connect = require('gulp-connect');
+const concat = require('gulp-concat');
+const templateCache = require('gulp-angular-templatecache');
+const es = require('event-stream');
 
 
 gulp.task('default', ['devServer']);
 
 gulp.task('devServer', [
     'populateTmpDir',
+    'concatJs',
     'transpileScss',
     'watch',
     'serveTmp',
     'serveMock',
 ]);
+gulp.task('concatJs', concatJs);
 gulp.task('populateTmpDir', populateTmpDir);
 gulp.task('transpileScss', transpileScss);
 gulp.task('serveTmp', serveTmp);
@@ -25,10 +30,26 @@ gulp.task('watch', [
     'watchSass',
 ]);
 
+function compileTemplates() {
+    return gulp.src('./src/views/**/*.html').
+        pipe(templateCache());
+}
+
+function concatJs() {
+    return es.merge(gulp.src([
+        './src/js/app.js',
+        './.tmp/js/templates.js',
+        './src/js/**/*.js',
+    ]), compileTemplates()).
+        pipe(sourcemaps.init()).
+        pipe(concat('app.js')).
+        pipe(sourcemaps.write()).
+        pipe(gulp.dest('.tmp/js'));
+}
+
 function populateTmpDir() {
     gulp.src([
-        'src/**/*',
-        '!src/css/**/*.scss',
+        './src/index.html',
     ]).pipe(gulp.dest('.tmp/'));
 }
 

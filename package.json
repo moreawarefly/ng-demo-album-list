@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/moreawarefly/ng-demo-album-list#readme",
   "devDependencies": {
+    "event-stream": "^3.3.4",
     "gulp": "^3.9.1",
+    "gulp-angular-templatecache": "^2.0.0",
+    "gulp-concat": "^2.6.0",
     "gulp-connect": "^5.0.0",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0"

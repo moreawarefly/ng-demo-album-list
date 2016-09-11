@@ -14,7 +14,7 @@
 
     function appConfig($routeProvider) {
         $routeProvider.when('/', {
-            templateUrl: '../views/intro.html',
+            templateUrl: 'intro.html',
             action: 'DashboardApp.DashboardCtrl',
         });
     }
