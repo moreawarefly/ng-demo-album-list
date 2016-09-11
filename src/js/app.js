@@ -9,6 +9,9 @@
     // services
     angular.module('dataservice', []);
 
+    // directives
+    angular.module('loader', []);
+
     angular.module('AlbumsApp', [
         'ngRoute',
         'templates',

@@ -9,6 +9,11 @@
 .albums-list {
     flex: 1;
     overflow: auto;
+    position: relative;
+}
+.albums-list-container {
+    height: 100%;
+    overflow: auto;
 }
 .order-button {
     border: none;

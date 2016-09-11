@@ -1,23 +1,25 @@
-angular.
-    module('AlbumsApp').
-    service('dataservice', dataservice);
+(() => {
+    angular.
+        module('AlbumsApp').
+        service('dataservice', dataservice);
 
-dataservice.$inject = ['$http', '$log'];
+    dataservice.$inject = ['$http', '$log'];
 
-function dataservice($http, $log) {
-    this.getAlbums = getAlbums;
+    function dataservice($http, $log) {
+        this.getAlbums = getAlbums;
 
-    function getAlbums() {
-        return $http.get('http://localhost:9001/albums').
-            then(getAlbumsSuccess).
-            catch(getAlbumsError);
+        function getAlbums() {
+            return $http.get('http://localhost:9001/albums').
+                then(getAlbumsSuccess).
+                catch(getAlbumsError);
 
-        function getAlbumsSuccess(response) {
-            return response.data.topalbums.album;
-        }
+            function getAlbumsSuccess(response) {
+                return response.data.topalbums.album;
+            }
 
-        function getAlbumsError(error) {
-            $log.error(`XHR Error during getting albums: ${error.data}`);
+            function getAlbumsError(error) {
+                $log.error(`XHR Error during getting albums: ${error.data}`);
+            }
         }
     }
-}
+})();
