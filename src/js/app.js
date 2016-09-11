@@ -1,7 +1,13 @@
 (() => {
+    // gulp build modules
     angular.module('templates', []);
+
+    // views
     angular.module('Intro', []);
     angular.module('Albums', []);
+
+    // services
+    angular.module('dataservice', []);
 
     angular.module('AlbumsApp', [
         'ngRoute',
@@ -15,9 +21,9 @@
     function appConfig($routeProvider) {
         $routeProvider.when('/albums', {
             templateUrl: 'albums.html',
+            action: 'Albums.AlbumsCtrl',
         }).otherwise({
             templateUrl: 'intro.html',
-            action: 'DashboardApp.DashboardCtrl',
         });
     }
 })();

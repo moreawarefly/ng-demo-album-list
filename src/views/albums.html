@@ -1,1 +1,20 @@
-albums
+<div ng-controller="AlbumsController as albums">
+    <h1>Top albums from my last.fm history</h1>
+    <h3>Sorting options:</h1>
+    <form class="sorting-form">
+        <label for="sorting-form-order-by-select">Order by:</label>
+        <select name="sorting-form-order-by-select">
+            <option value="red">Artist name</option>
+            <option value="yellow">Album title</option>
+            <option value="purple">Release date</option>
+        </select>
+        <label>Sorting order:</label>
+        <button class="sorting-form-order-asc-button"></button>
+        <button class="sorting-form-order-desc-button"></button>
+    </form>
+
+    <h3>Albums list:</h3>
+    <div class="albums-list-container">
+        {{ ::albums.albums}}
+    </div>
+</div>
