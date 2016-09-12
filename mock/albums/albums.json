@@ -4,6 +4,7 @@
             {
                 "name": "Saturdays = Youth",
                 "playcount": 2103,
+                "released": "2001-01-01T00:00:00.000Z",
                 "mbid": "47be05f6-a0c1-4ea9-95d7-692560bc0198",
                 "url": "https://www.last.fm/music/M83/Saturdays+=+Youth",
                 "artist": {
@@ -36,6 +37,7 @@
             {
                 "name": "Hurry Up, We're Dreaming (Disc One)",
                 "playcount": 1896,
+                "released": "1999-01-01T00:00:00.000Z",
                 "mbid": "",
                 "url": "https://www.last.fm/music/M83/Hurry+Up,+We%27re+Dreaming+(Disc+One)",
                 "artist": {
@@ -68,6 +70,7 @@
             {
                 "name": "Hush",
                 "playcount": 1664,
+                "released": "2000-01-20T00:00:00.000Z",
                 "mbid": "5ce07e2f-e73c-3a77-b762-d09812ad8c00",
                 "url": "https://www.last.fm/music/Asobi+Seksu/Hush",
                 "artist": {
@@ -100,6 +103,7 @@
             {
                 "name": "Krzyk",
                 "playcount": 1446,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "47bea53f-6939-4122-82c3-308a034d80c0",
                 "url": "https://www.last.fm/music/Iza+Lach/Krzyk",
                 "artist": {
@@ -132,6 +136,7 @@
             {
                 "name": "Quiet Is the New Loud",
                 "playcount": 1389,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "87fef37c-3324-4c11-8b0c-c37b806c6b05",
                 "url": "https://www.last.fm/music/Kings+of+Convenience/Quiet+Is+the+New+Loud",
                 "artist": {
@@ -164,6 +169,7 @@
             {
                 "name": "Hurry Up, We're Dreaming",
                 "playcount": 1388,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "0b87ebcf-216b-4255-9c19-93c12861f173",
                 "url": "https://www.last.fm/music/M83/Hurry+Up,+We%27re+Dreaming",
                 "artist": {
@@ -196,6 +202,7 @@
             {
                 "name": "So This Is Goodbye",
                 "playcount": 1380,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "11138499-c9d2-3d09-8b32-6d3009ac2c0a",
                 "url": "https://www.last.fm/music/Junior+Boys/So+This+Is+Goodbye",
                 "artist": {
@@ -228,6 +235,7 @@
             {
                 "name": "Microcastle",
                 "playcount": 1270,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "c16ba271-f7e8-4a41-ac2c-c74d1dc37c5f",
                 "url": "https://www.last.fm/music/Deerhunter/Microcastle",
                 "artist": {
@@ -260,6 +268,7 @@
             {
                 "name": "Declaration of Dependence",
                 "playcount": 1260,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "14b6ef82-a25f-3698-b1d1-4c2a53133685",
                 "url": "https://www.last.fm/music/Kings+of+Convenience/Declaration+of+Dependence",
                 "artist": {
@@ -292,6 +301,7 @@
             {
                 "name": "Before the Dawn Heals Us",
                 "playcount": 1230,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "db85c244-53e7-441c-bab0-52c9c0d27450",
                 "url": "https://www.last.fm/music/M83/Before+the+Dawn+Heals+Us",
                 "artist": {
@@ -324,6 +334,7 @@
             {
                 "name": "Fisherman's Woman  [2005]",
                 "playcount": 1191,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "",
                 "url": "https://www.last.fm/music/Emil%C3%ADana+Torrini/Fisherman%27s+Woman++%5B2005%5D",
                 "artist": {
@@ -356,6 +367,7 @@
             {
                 "name": "Good News For People Who Love Bad News",
                 "playcount": 1158,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "ae7e41d6-ea04-455b-9107-80a94a24443c",
                 "url": "https://www.last.fm/music/Modest+Mouse/Good+News+For+People+Who+Love+Bad+News",
                 "artist": {
@@ -388,6 +400,7 @@
             {
                 "name": "Hounds of Love",
                 "playcount": 1124,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "778c8867-ee94-366a-bcd8-e140cfbf1b67",
                 "url": "https://www.last.fm/music/Kate+Bush/Hounds+of+Love",
                 "artist": {
@@ -420,6 +433,7 @@
             {
                 "name": "Causers of This",
                 "playcount": 1108,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "a475ed3c-a989-49de-92ec-4e7c1f2fed68",
                 "url": "https://www.last.fm/music/Toro+y+Moi/Causers+of+This",
                 "artist": {
@@ -452,6 +466,7 @@
             {
                 "name": "OK Computer",
                 "playcount": 1057,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "bdf93ecb-85e8-3505-98f7-e2e8c5052723",
                 "url": "https://www.last.fm/music/Radiohead/OK+Computer",
                 "artist": {
@@ -484,6 +499,7 @@
             {
                 "name": "Dead Cities, Red Seas & Lost Ghosts",
                 "playcount": 1033,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "8c968422-6153-4cce-b164-fd4529b71513",
                 "url": "https://www.last.fm/music/M83/Dead+Cities,+Red+Seas+&+Lost+Ghosts",
                 "artist": {
@@ -516,6 +532,7 @@
             {
                 "name": "Wait To Pleasure",
                 "playcount": 1018,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "c6b3b9e5-8e41-407b-a2fb-ab58a93f7da9",
                 "url": "https://www.last.fm/music/No+Joy/Wait+To+Pleasure",
                 "artist": {
@@ -548,6 +565,7 @@
             {
                 "name": "Moon Safari",
                 "playcount": 1006,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "4c55906c-349b-362d-922e-956762912b42",
                 "url": "https://www.last.fm/music/Air/Moon+Safari",
                 "artist": {
@@ -580,6 +598,7 @@
             {
                 "name": "Riot on an Empty Street",
                 "playcount": 995,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "95f5a9bd-5493-4134-a8f3-5ed3752a7d0f",
                 "url": "https://www.last.fm/music/Kings+of+Convenience/Riot+on+an+Empty+Street",
                 "artist": {
@@ -612,6 +631,7 @@
             {
                 "name": "Bloom",
                 "playcount": 945,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "24c99b7d-b243-450d-8477-46dfd4a8bfa3",
                 "url": "https://www.last.fm/music/Beach+House/Bloom",
                 "artist": {
@@ -644,6 +664,7 @@
             {
                 "name": "The Moon & Antarctica",
                 "playcount": 926,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "9dc56f2a-05a3-4d11-ace5-6b878320fa03",
                 "url": "https://www.last.fm/music/Modest+Mouse/The+Moon+&+Antarctica",
                 "artist": {
@@ -676,6 +697,7 @@
             {
                 "name": "Heaven or Las Vegas",
                 "playcount": 924,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "ba1d227e-49b2-31e6-b3b9-9d7d44516c3a",
                 "url": "https://www.last.fm/music/Cocteau+Twins/Heaven+or+Las+Vegas",
                 "artist": {
@@ -708,6 +730,7 @@
             {
                 "name": "Think Tank",
                 "playcount": 906,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "c0c185de-21a7-40ee-a214-5ddfc7f77227",
                 "url": "https://www.last.fm/music/Blur/Think+Tank",
                 "artist": {
@@ -740,6 +763,7 @@
             {
                 "name": "Within and Without",
                 "playcount": 888,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "9e944b69-8e75-47f7-8d85-1a2584bf3f7c",
                 "url": "https://www.last.fm/music/Washed+Out/Within+and+Without",
                 "artist": {
@@ -772,6 +796,7 @@
             {
                 "name": "Dear Science,",
                 "playcount": 878,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "",
                 "url": "https://www.last.fm/music/TV+on+the+Radio/Dear+Science,",
                 "artist": {
@@ -804,6 +829,7 @@
             {
                 "name": "Wolfgang Amadeus Phoenix",
                 "playcount": 866,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "9f80e404-9436-307a-a369-e93a2fdd6751",
                 "url": "https://www.last.fm/music/Phoenix/Wolfgang+Amadeus+Phoenix",
                 "artist": {
@@ -836,6 +862,7 @@
             {
                 "name": "Last Exit",
                 "playcount": 861,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "66a1302d-2a98-4333-84a3-a2d24c398205",
                 "url": "https://www.last.fm/music/Junior+Boys/Last+Exit",
                 "artist": {
@@ -868,6 +895,7 @@
             {
                 "name": "In Rainbows",
                 "playcount": 847,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "ea92a194-2d60-35c7-9d56-0e1dba20cd45",
                 "url": "https://www.last.fm/music/Radiohead/In+Rainbows",
                 "artist": {
@@ -900,6 +928,7 @@
             {
                 "name": "Living Room Songs",
                 "playcount": 804,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "56a15cf2-a435-48c9-8fdc-642e24aff561",
                 "url": "https://www.last.fm/music/%C3%93lafur+Arnalds/Living+Room+Songs",
                 "artist": {
@@ -932,6 +961,7 @@
             {
                 "name": "The Sensual World",
                 "playcount": 802,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "b9016aaf-ca71-304f-b5f1-d6384cf465f3",
                 "url": "https://www.last.fm/music/Kate+Bush/The+Sensual+World",
                 "artist": {
@@ -964,6 +994,7 @@
             {
                 "name": "Asobi Seksu",
                 "playcount": 801,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "ad80d6e3-cb05-4447-b38a-0948f05a9c1d",
                 "url": "https://www.last.fm/music/Asobi+Seksu/Asobi+Seksu",
                 "artist": {
@@ -996,6 +1027,7 @@
             {
                 "name": "Pet Grief",
                 "playcount": 796,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "18056805-33f5-3e99-aa4b-5f5919c4f8af",
                 "url": "https://www.last.fm/music/The+Radio+Dept./Pet+Grief",
                 "artist": {
@@ -1028,6 +1060,7 @@
             {
                 "name": "Finally We Are No One",
                 "playcount": 775,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "cb906057-d72d-45a3-aaf6-54569ced782e",
                 "url": "https://www.last.fm/music/m%C3%BAm/Finally+We+Are+No+One",
                 "artist": {
@@ -1060,6 +1093,7 @@
             {
                 "name": "Hot Fuss",
                 "playcount": 775,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "bc9bd08c-1d1a-4e4e-bd40-8829aa120013",
                 "url": "https://www.last.fm/music/The+Killers/Hot+Fuss",
                 "artist": {
@@ -1092,6 +1126,7 @@
             {
                 "name": "Citrus",
                 "playcount": 772,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "1d3f727e-50ee-40b3-b39b-a480cd0612e8",
                 "url": "https://www.last.fm/music/Asobi+Seksu/Citrus",
                 "artist": {
@@ -1124,6 +1159,7 @@
             {
                 "name": "The Bends",
                 "playcount": 771,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "42b46c84-2359-326a-87ee-bb056bd300c8",
                 "url": "https://www.last.fm/music/Radiohead/The+Bends",
                 "artist": {
@@ -1156,6 +1192,7 @@
             {
                 "name": "Talkie Walkie",
                 "playcount": 754,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "b8f3c647-89b1-4cd6-bb71-a91072380e46",
                 "url": "https://www.last.fm/music/Air/Talkie+Walkie",
                 "artist": {
@@ -1188,6 +1225,7 @@
             {
                 "name": "The Blue Notebooks",
                 "playcount": 754,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "ea46398a-5501-45ec-a5f5-09a29d031f45",
                 "url": "https://www.last.fm/music/Max+Richter/The+Blue+Notebooks",
                 "artist": {
@@ -1220,6 +1258,7 @@
             {
                 "name": "Boys Again",
                 "playcount": 741,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "80ffaba1-7faa-4575-8bad-237491b450ed",
                 "url": "https://www.last.fm/music/Ballet+School/Boys+Again",
                 "artist": {
@@ -1252,6 +1291,7 @@
             {
                 "name": "Clear Moon",
                 "playcount": 739,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "ee805eba-996b-48c6-bccb-52b6ff5f4dd7",
                 "url": "https://www.last.fm/music/Mount+Eerie/Clear+Moon",
                 "artist": {
@@ -1284,6 +1324,7 @@
             {
                 "name": "Terroromans",
                 "playcount": 737,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "7fbd7239-8b3c-4145-b5c1-11035bfa8fba",
                 "url": "https://www.last.fm/music/Muchy/Terroromans",
                 "artist": {
@@ -1316,6 +1357,7 @@
             {
                 "name": "Cool Kids of Death",
                 "playcount": 732,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "",
                 "url": "https://www.last.fm/music/Cool+Kids+Of+Death/Cool+Kids+of+Death",
                 "artist": {
@@ -1348,6 +1390,7 @@
             {
                 "name": "Funeral",
                 "playcount": 731,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "26cdc327-38f2-4200-b5dc-f2fa0e13fcfe",
                 "url": "https://www.last.fm/music/Arcade+Fire/Funeral",
                 "artist": {
@@ -1380,6 +1423,7 @@
             {
                 "name": "Begone Dull Care",
                 "playcount": 727,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "36c509e9-b236-3b55-a0c4-bb5d7e06645d",
                 "url": "https://www.last.fm/music/Junior+Boys/Begone+Dull+Care",
                 "artist": {
@@ -1412,6 +1456,7 @@
             {
                 "name": "Tango in the Night",
                 "playcount": 727,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "ad3f2bf7-90d0-375f-aae1-9e49c1a7d93f",
                 "url": "https://www.last.fm/music/Fleetwood+Mac/Tango+in+the+Night",
                 "artist": {
@@ -1444,6 +1489,7 @@
             {
                 "name": "Souvlaki",
                 "playcount": 705,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "4939859c-ce2a-484b-872b-6d7ab9ff7260",
                 "url": "https://www.last.fm/music/Slowdive/Souvlaki",
                 "artist": {
@@ -1476,6 +1522,7 @@
             {
                 "name": "Black Cherry",
                 "playcount": 699,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "4eb6eba2-4d90-3482-8a02-9af0a27ae5cb",
                 "url": "https://www.last.fm/music/Goldfrapp/Black+Cherry",
                 "artist": {
@@ -1508,6 +1555,7 @@
             {
                 "name": "Fluorescence",
                 "playcount": 697,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "a1e736d4-9a62-4566-bf0b-68774fc60cfd",
                 "url": "https://www.last.fm/music/Asobi+Seksu/Fluorescence",
                 "artist": {
@@ -1540,6 +1588,7 @@
             {
                 "name": "We Were Dead Before The Ship Even Sank",
                 "playcount": 683,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "8ee412d3-eadc-3a75-8e2b-41c597bad4ec",
                 "url": "https://www.last.fm/music/Modest+Mouse/We+Were+Dead+Before+The+Ship+Even+Sank",
                 "artist": {
@@ -1572,6 +1621,7 @@
             {
                 "name": "The Knife",
                 "playcount": 671,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "240712ac-5ac0-447a-aebc-fbb425cd7160",
                 "url": "https://www.last.fm/music/The+Knife/The+Knife",
                 "artist": {
@@ -1604,6 +1654,7 @@
             {
                 "name": "Piano Works",
                 "playcount": 664,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "25033b7a-0456-4b3a-85fb-6de1b84100a4",
                 "url": "https://www.last.fm/music/Craig+Armstrong/Piano+Works",
                 "artist": {
@@ -1636,6 +1687,7 @@
             {
                 "name": "Flamingo",
                 "playcount": 657,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "a8dff6a9-9a3f-41aa-b2f4-7055eabd7079",
                 "url": "https://www.last.fm/music/Brandon+Flowers/Flamingo",
                 "artist": {
@@ -1668,6 +1720,7 @@
             {
                 "name": "Ashes Grammar",
                 "playcount": 656,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "f2adb6b7-f213-479a-87f1-ef3d2bb19a38",
                 "url": "https://www.last.fm/music/A+Sunny+Day+In+Glasgow/Ashes+Grammar",
                 "artist": {
@@ -1700,6 +1753,7 @@
             {
                 "name": "Friendly Fires",
                 "playcount": 654,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "b67873ee-c681-3f95-a50a-dc3011f1b0f2",
                 "url": "https://www.last.fm/music/Friendly+Fires/Friendly+Fires",
                 "artist": {
@@ -1732,6 +1786,7 @@
             {
                 "name": "The Understanding",
                 "playcount": 643,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "1a4c78f8-ec49-30cb-97ee-cf64a95d0e12",
                 "url": "https://www.last.fm/music/R%C3%B6yksopp/The+Understanding",
                 "artist": {
@@ -1764,6 +1819,7 @@
             {
                 "name": "Dziecko",
                 "playcount": 641,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "afc8cb02-832d-4636-a84d-4d2dec10df6e",
                 "url": "https://www.last.fm/music/Edyta+Bartosiewicz/Dziecko",
                 "artist": {
@@ -1796,6 +1852,7 @@
             {
                 "name": "The Whole Story",
                 "playcount": 638,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "6b2f1520-ba05-4bed-987c-3cfdc58affba",
                 "url": "https://www.last.fm/music/Kate+Bush/The+Whole+Story",
                 "artist": {
@@ -1828,6 +1885,7 @@
             {
                 "name": "Just for a Day",
                 "playcount": 637,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "a7db72e2-9f26-3bbb-98b2-bce8a27a7f93",
                 "url": "https://www.last.fm/music/Slowdive/Just+for+a+Day",
                 "artist": {
@@ -1860,6 +1918,7 @@
             {
                 "name": "Love in the Time of Science",
                 "playcount": 637,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "4086fb2d-8bae-4d8e-9557-30b84f10755f",
                 "url": "https://www.last.fm/music/Emil%C3%ADana+Torrini/Love+in+the+Time+of+Science",
                 "artist": {
@@ -1892,6 +1951,7 @@
             {
                 "name": "II",
                 "playcount": 633,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "",
                 "url": "https://www.last.fm/music/Yumi+Zouma/II",
                 "artist": {
@@ -1924,6 +1984,7 @@
             {
                 "name": "Rewolf",
                 "playcount": 619,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "d6822816-623d-4c0c-bcfc-72947fe64209",
                 "url": "https://www.last.fm/music/Asobi+Seksu/Rewolf",
                 "artist": {
@@ -1956,6 +2017,7 @@
             {
                 "name": "Olympia",
                 "playcount": 610,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "542f5e53-479f-4581-88b7-93cd05ab489d",
                 "url": "https://www.last.fm/music/Austra/Olympia",
                 "artist": {
@@ -1988,6 +2050,7 @@
             {
                 "name": "Wish",
                 "playcount": 610,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "4284b81f-1731-313a-a4de-58b4c18a754a",
                 "url": "https://www.last.fm/music/The+Cure/Wish",
                 "artist": {
@@ -2020,6 +2083,7 @@
             {
                 "name": "Grace",
                 "playcount": 607,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "8b33a7cd-b5c3-41ff-9628-5101d24dbc41",
                 "url": "https://www.last.fm/music/Jeff+Buckley/Grace",
                 "artist": {
@@ -2052,6 +2116,7 @@
             {
                 "name": "Tourist History (Japan Edition)",
                 "playcount": 605,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "",
                 "url": "https://www.last.fm/music/Two+Door+Cinema+Club/Tourist+History+(Japan+Edition)",
                 "artist": {
@@ -2084,6 +2149,7 @@
             {
                 "name": "Abandonware",
                 "playcount": 604,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "",
                 "url": "https://www.last.fm/music/Roman+%C3%A0+Clef/Abandonware",
                 "artist": {
@@ -2116,6 +2182,7 @@
             {
                 "name": "Teen Dream",
                 "playcount": 601,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "44f67ad5-cdff-3036-80e9-bee67402ded0",
                 "url": "https://www.last.fm/music/Beach+House/Teen+Dream",
                 "artist": {
@@ -2148,6 +2215,7 @@
             {
                 "name": "Best Of",
                 "playcount": 597,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "dfd93f05-9b1c-4067-834a-6ec21c45c423",
                 "url": "https://www.last.fm/music/The+Cardigans/Best+Of",
                 "artist": {
@@ -2180,6 +2248,7 @@
             {
                 "name": "The Dead Texan",
                 "playcount": 596,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "c1bd3de6-058d-4a12-bd7b-0060eb4b2d0d",
                 "url": "https://www.last.fm/music/The+Dead+Texan/The+Dead+Texan",
                 "artist": {
@@ -2212,6 +2281,7 @@
             {
                 "name": "Acolyte",
                 "playcount": 595,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "5cac29b4-3c6b-46a5-8abb-79bb7fba623d",
                 "url": "https://www.last.fm/music/Delphic/Acolyte",
                 "artist": {
@@ -2244,6 +2314,7 @@
             {
                 "name": "Hail to the Thief",
                 "playcount": 593,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "1fb1bcc2-1107-3b79-9fc4-db5b912651d8",
                 "url": "https://www.last.fm/music/Radiohead/Hail+to+the+Thief",
                 "artist": {
@@ -2276,6 +2347,7 @@
             {
                 "name": "Atlas",
                 "playcount": 588,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "c93c34bc-163f-49c8-974e-c9895f03851e",
                 "url": "https://www.last.fm/music/Real+Estate/Atlas",
                 "artist": {
@@ -2308,6 +2380,7 @@
             {
                 "name": "Butterfly Case",
                 "playcount": 584,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "331fb96f-1fea-4d9c-a8ce-6dbda9c979ce",
                 "url": "https://www.last.fm/music/Cuushe/Butterfly+Case",
                 "artist": {
@@ -2340,6 +2413,7 @@
             {
                 "name": "TOTAL",
                 "playcount": 582,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "",
                 "url": "https://www.last.fm/music/New+Order/TOTAL",
                 "artist": {
@@ -2372,6 +2446,7 @@
             {
                 "name": "Halcyon Digest",
                 "playcount": 580,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "4e95aed6-a963-4144-94f0-42582da716fc",
                 "url": "https://www.last.fm/music/Deerhunter/Halcyon+Digest",
                 "artist": {
@@ -2404,6 +2479,7 @@
             {
                 "name": "Underneath the Pine",
                 "playcount": 577,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "03b381ba-f859-3da0-873c-e359c56f25dd",
                 "url": "https://www.last.fm/music/Toro+y+Moi/Underneath+the+Pine",
                 "artist": {
@@ -2436,6 +2512,7 @@
             {
                 "name": "Nocturne",
                 "playcount": 572,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "172124dd-72da-4822-9945-e81b262ca7b3",
                 "url": "https://www.last.fm/music/Wild+Nothing/Nocturne",
                 "artist": {
@@ -2468,6 +2545,7 @@
             {
                 "name": "Fleet Foxes (CD1)",
                 "playcount": 567,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "",
                 "url": "https://www.last.fm/music/Fleet+Foxes/Fleet+Foxes+(CD1)",
                 "artist": {
@@ -2500,6 +2578,7 @@
             {
                 "name": "Swim",
                 "playcount": 565,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "0c727a84-e19b-3217-b47c-2228c786d46a",
                 "url": "https://www.last.fm/music/Caribou/Swim",
                 "artist": {
@@ -2532,6 +2611,7 @@
             {
                 "name": "Lost Souls",
                 "playcount": 563,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "81776221-c3ae-4662-8f2f-7a239cbb24af",
                 "url": "https://www.last.fm/music/Doves/Lost+Souls",
                 "artist": {
@@ -2564,6 +2644,7 @@
             {
                 "name": "Kid A",
                 "playcount": 556,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "b13f061a-bd3c-3aaf-9a60-64a0c6f7aee5",
                 "url": "https://www.last.fm/music/Radiohead/Kid+A",
                 "artist": {
@@ -2596,6 +2677,7 @@
             {
                 "name": "Manners",
                 "playcount": 556,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "830e2a21-1e76-40ad-a4a5-9a1b12d656ff",
                 "url": "https://www.last.fm/music/Passion+Pit/Manners",
                 "artist": {
@@ -2628,6 +2710,7 @@
             {
                 "name": "Live In Prague 09-17-05",
                 "playcount": 555,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "",
                 "url": "https://www.last.fm/music/M83/Live+In+Prague+09-17-05",
                 "artist": {
@@ -2660,6 +2743,7 @@
             {
                 "name": "La Marche De l'Empereur",
                 "playcount": 554,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "",
                 "url": "https://www.last.fm/music/%C3%89milie+Simon/La+Marche+De+l%27Empereur",
                 "artist": {
@@ -2692,6 +2776,7 @@
             {
                 "name": "Pop",
                 "playcount": 551,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "29abbaf0-f8f5-39c3-8c93-1859d53150cc",
                 "url": "https://www.last.fm/music/U2/Pop",
                 "artist": {
@@ -2724,6 +2809,7 @@
             {
                 "name": "2006",
                 "playcount": 546,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "b903bbec-7cb3-4083-b6bf-51302ee03618",
                 "url": "https://www.last.fm/music/Cool+Kids+Of+Death/2006",
                 "artist": {
@@ -2756,6 +2842,7 @@
             {
                 "name": "Ask Me Tomorrow",
                 "playcount": 543,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "08972b3b-a5ce-3e51-9085-8a12f2753879",
                 "url": "https://www.last.fm/music/Mojave+3/Ask+Me+Tomorrow",
                 "artist": {
@@ -2788,6 +2875,7 @@
             {
                 "name": "Galore (The Singles 1987-1997)",
                 "playcount": 543,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "",
                 "url": "https://www.last.fm/music/The+Cure/Galore+(The+Singles+1987-1997)",
                 "artist": {
@@ -2820,6 +2908,7 @@
             {
                 "name": "Parachutes",
                 "playcount": 540,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "8e602038-c0f2-3c2d-9068-a1a3daca493d",
                 "url": "https://www.last.fm/music/Coldplay/Parachutes",
                 "artist": {
@@ -2852,6 +2941,7 @@
             {
                 "name": "Spoon and Rafter",
                 "playcount": 538,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "168f25b8-52ca-4236-adfc-86659096551f",
                 "url": "https://www.last.fm/music/Mojave+3/Spoon+and+Rafter",
                 "artist": {
@@ -2884,6 +2974,7 @@
             {
                 "name": "Kaputt",
                 "playcount": 531,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "e3ec2e6e-352a-4492-9731-abd7df18904b",
                 "url": "https://www.last.fm/music/Destroyer/Kaputt",
                 "artist": {
@@ -2916,6 +3007,7 @@
             {
                 "name": "Never for Ever",
                 "playcount": 526,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "bac0a5ba-0141-46ca-b22d-f8c002d2c241",
                 "url": "https://www.last.fm/music/Kate+Bush/Never+for+Ever",
                 "artist": {
@@ -2948,6 +3040,7 @@
             {
                 "name": "Post",
                 "playcount": 526,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "720ab4d5-085a-32d7-ba6a-a52d17b95af8",
                 "url": "https://www.last.fm/music/Bj%C3%B6rk/Post",
                 "artist": {
@@ -2980,6 +3073,7 @@
             {
                 "name": "Felt Mountain",
                 "playcount": 520,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "a9c71b51-ad11-436e-b759-9f23c324433a",
                 "url": "https://www.last.fm/music/Goldfrapp/Felt+Mountain",
                 "artist": {
@@ -3012,6 +3106,7 @@
             {
                 "name": "Fleet Foxes (cd2)",
                 "playcount": 517,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "",
                 "url": "https://www.last.fm/music/Fleet+Foxes/Fleet+Foxes+(cd2)",
                 "artist": {
@@ -3044,6 +3139,7 @@
             {
                 "name": "Miike Snow",
                 "playcount": 516,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "107e0798-205c-47f1-8738-e4c712848fc1",
                 "url": "https://www.last.fm/music/Miike+Snow/Miike+Snow",
                 "artist": {
@@ -3076,6 +3172,7 @@
             {
                 "name": "Behaviour",
                 "playcount": 515,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "30a9bbd6-e456-3478-9a35-1cf958cf9637",
                 "url": "https://www.last.fm/music/Pet+Shop+Boys/Behaviour",
                 "artist": {
@@ -3108,6 +3205,7 @@
             {
                 "name": "Disintegration",
                 "playcount": 504,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "91fa2331-d8b4-4d1f-aa4d-53b1c54853e5",
                 "url": "https://www.last.fm/music/The+Cure/Disintegration",
                 "artist": {
@@ -3140,6 +3238,7 @@
             {
                 "name": "Uwaga! Jedzie tramwaj",
                 "playcount": 502,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "bdb8a77b-e22d-4b7e-9d76-cd6b6bae8068",
                 "url": "https://www.last.fm/music/Lenny+Valentino/Uwaga%21+Jedzie+tramwaj",
                 "artist": {
@@ -3172,6 +3271,7 @@
             {
                 "name": "Heaven Or Las Vegas (Remastered)",
                 "playcount": 492,
+                "released": "2000-01-01T00:00:00.000Z",
                 "mbid": "",
                 "url": "https://www.last.fm/music/Cocteau+Twins/Heaven+Or+Las+Vegas+(Remastered)",
                 "artist": {

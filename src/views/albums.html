@@ -17,8 +17,8 @@
                     >artist</span>
                 <span
                     class="sorting-option"
-                    ng-class="{active: albums.sortAttribute == 'playcount'}"
-                    ng-click="albums.sortAttribute = 'playcount'"
+                    ng-class="{active: albums.sortAttribute == 'released'}"
+                    ng-click="albums.sortAttribute = 'released'"
                     >release</span>
                 <button 
                     class="order-button"
@@ -33,7 +33,7 @@
                     </svg>
                 </button>
             </div>
-            
+
         </form>
         <h3>Albums list:</h3>
     </header>
@@ -50,18 +50,14 @@
                         alt="{{ ::album.name }}">
                 </a>
                 <div class="album-details">
-                    <h4 class="album-list-album-title">
-                        <a href="{{ ::album.url }}" target="_blank">
-                            {{ ::album.name }}
-                        </a>
+                    <h4 class="album-title">
+                        {{ ::album.name }}
                     </h4>
                     <h5 class="album-artist">
-                        By <a href="{{ ::album.artist.url }}" target="_blank">
-                            {{ ::album.artist.name }}
-                        </a>
+                        By {{ ::album.artist.name }}
                     </h5>
                     <h6 class="album-release-date">
-                        Released TODO {{ ::album.playcount }}
+                        {{ ::album.released | date:'dd.MM.yyyy' }}
                     </h6>
                 </div>
             </div>

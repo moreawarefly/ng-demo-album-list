@@ -7,13 +7,10 @@
     z-index: -10;
     opacity: 0;
     background-color: rgba(0,0,0,.8);
-    transition: opacity .3s;
+    transition: opacity .4s;
     &.visible {
         z-index: 10;
         opacity: 1;
-        .loader {
-            top: 52%;
-        }
     }
 }
 
@@ -29,9 +26,9 @@
     height: 80px;
     margin-left: -40px;
     margin-top: -40px;
-    transition: top .3s;
+    transition: top .4s;
     animation-name: rotate; 
-    animation-duration: 1s; 
+    animation-duration: 2s; 
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     fill: $white;
