@@ -54,10 +54,10 @@
                         {{ ::album.name }}
                     </h4>
                     <h5 class="album-artist">
-                        By {{ ::album.artist.name }}
+                        <span class="pale-label">By:</span> {{ ::album.artist.name }}
                     </h5>
                     <h6 class="album-release-date">
-                        {{ ::album.released | date:'dd.MM.yyyy' }}
+                        <span class="pale-label">Released:</span> {{ ::album.released | date:'dd.MM.yyyy' }}
                     </h6>
                 </div>
             </div>

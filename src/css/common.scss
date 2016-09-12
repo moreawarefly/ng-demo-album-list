@@ -1,6 +1,12 @@
 main, body, html {
+    font-family: 'Lato';
     padding: 0;
     margin: 0;
     height: 100%;
     text-align: center;
+}
+
+.pale-label {
+    color: $gray;
+    padding-right: 5px;
 }

@@ -5,7 +5,8 @@
   "main": "index.html",
   "scripts": {
     "start": "rimraf .tmp && gulp",
-    "build": "rimraf .tmp && gulp build"
+    "build": "rimraf .tmp && gulp build",
+    "servebuild": "rimraf .tmp && gulp serveBuild"
   },
   "repository": {
     "type": "git",

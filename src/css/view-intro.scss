@@ -1,0 +1,27 @@
+$introMaxWidth: 500px;
+
+.intro {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    transform: translate(0, -50%);
+}
+
+.intro-lorem {
+    font-size: 1em;
+    max-width: $introMaxWidth;
+    margin: 0 auto 50px;
+    text-align: justify;
+    padding: 0 50px;
+    text-indent: 30px;
+}
+
+.intro-link {
+    text-decoration: none;
+    &:visited {
+        color: $black;
+    }
+    &:hover {
+        color: $gray;
+    }
+}
