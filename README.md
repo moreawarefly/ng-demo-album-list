@@ -33,7 +33,7 @@ or:
 ```sh
 $ gulp build
 ```
-builds, concatenates, minifies and includes all sources in `index.html` file
+builds, concatenates, minifies and includes all sources in `index.html` file inside `dist` directory
 
 ### Distribution preview server:
 ```sh
