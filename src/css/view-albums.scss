@@ -24,11 +24,15 @@ $sortingContainerMaxWidth: 400px;
     }
 }
 .sorting-option {
+    background-color: $white;
     border: 1px solid $white;
     border-bottom: 0;
     padding: 0 0.6em;
     line-height: 2em;
     display: inline-block;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
     &.active {
         border: 1px solid $gray;
         border-bottom: 1px solid $white;
@@ -44,6 +48,7 @@ $sortingContainerMaxWidth: 400px;
     background-color: $white;
     -webkit-appearance: none;
     outline: none;
+    cursor: pointer;
 }
 .order-button-background {
     width: 20px;

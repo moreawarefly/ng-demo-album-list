@@ -4,7 +4,10 @@
 // common styles
 @import 'common';
 
-//components
+// components
 @import 'view-intro';
 @import 'view-albums';
 @import 'directive-loader';
+
+// responsive styling
+@import 'responsive';

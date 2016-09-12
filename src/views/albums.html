@@ -4,22 +4,22 @@
         <form class="sorting-form">
             <label class="order-label">Sorting:</label>
             <div class="sorting-container">
-                <span
+                <button
                     class="sorting-option"
                     ng-class="{active: albums.sortAttribute == 'name'}"
                     ng-click="albums.sortAttribute = 'name'"
                     >album
-                </span>
-                <span
+                </button>
+                <button
                     class="sorting-option"
                     ng-class="{active: albums.sortAttribute == 'artist.name'}"
                     ng-click="albums.sortAttribute = 'artist.name'"
-                    >artist</span>
-                <span
+                    >artist</button>
+                <button
                     class="sorting-option"
                     ng-class="{active: albums.sortAttribute == 'released'}"
                     ng-click="albums.sortAttribute = 'released'"
-                    >release</span>
+                    >release</button>
                 <button 
                     class="order-button"
                     name="order-button"
@@ -50,9 +50,9 @@
                         alt="{{ ::album.name }}">
                 </a>
                 <div class="album-details">
-                    <h4 class="album-title">
+                    <h2 class="album-title">
                         {{ ::album.name }}
-                    </h4>
+                    </h2>
                     <h5 class="album-artist">
                         <span class="pale-label">By:</span> {{ ::album.artist.name }}
                     </h5>
