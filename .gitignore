@@ -1,5 +1,6 @@
 #custom ignore entries
 .tmp
+dist
 ng-demo-album-list.sublime-project
 ng-demo-album-list.sublime-workspace
 
