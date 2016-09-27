@@ -1,11 +1,12 @@
-
 //mobile landscape view, tablet view, desktop view
 @media (min-width: 420px) {
     .album-container {
         display: flex;
-        width: 600px;
-        margin: 0 auto 20px;
+        max-width: 600px;
+        margin: 0 auto;
         text-align: left;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .album-details {
         flex: 1;
