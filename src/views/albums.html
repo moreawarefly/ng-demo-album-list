@@ -1,5 +1,5 @@
 <section class="albums-view" ng-controller="AlbumsController as albums">
-    <header class="albums-header">
+    <header class="albums-header" loader="albums.dataLoading">
         <h1>Top albums from my last.fm history</h1>
         <form class="sorting-form">
             <label class="order-label">Sorting:</label>
@@ -23,7 +23,7 @@
                 <button 
                     class="order-button"
                     name="order-button"
-                    ng-click="albums.toggleSortingOrder()">
+                    ng-click="albums.sortDescending = !albums.sortDescending">
                     <svg 
                         class="order-button-background"
                         ng-class="{reversed: albums.sortDescending}"
@@ -38,29 +38,27 @@
         <h3>Albums list:</h3>
     </header>
 
-    <section class="albums-list">
-        <div class="albums-list-container" loader="albums.dataLoading">
-            <div 
-                class="album-container"
-                ng-repeat="album in albums.albums | orderBy : albums.sortAttribute : albums.sortDescending">
-                <a href="{{ ::album.url }}" target="_blank">
-                    <img
-                        class="album-cover"
-                        ng-src="{{ ::album.image[2].text }}"
-                        alt="{{ ::album.name }}">
-                </a>
-                <div class="album-details">
-                    <h2 class="album-title">
-                        {{ ::album.name }}
-                    </h2>
-                    <h5 class="album-artist">
-                        <span class="pale-label">By:</span> {{ ::album.artist.name }}
-                    </h5>
-                    <h6 class="album-release-date">
-                        <span class="pale-label">Released:</span> {{ ::album.released | date:'dd.MM.yyyy' }}
-                    </h6>
-                </div>
+    <div class="albums-list-container">
+        <div 
+            class="album-container"
+            ng-repeat="album in albums.albums | orderBy : albums.sortAttribute : albums.sortDescending">
+            <a href="{{ ::album.url }}" target="_blank">
+                <img
+                    class="album-cover"
+                    ng-src="{{ ::album.image[2].text }}"
+                    alt="{{ ::album.name }}">
+            </a>
+            <div class="album-details">
+                <h2 class="album-title">
+                    {{ ::album.name }}
+                </h2>
+                <h5 class="album-artist">
+                    <span class="pale-label">By:</span> {{ ::album.artist.name }}
+                </h5>
+                <h6 class="album-release-date">
+                    <span class="pale-label">Released:</span> {{ ::album.released | date:'dd.MM.yyyy' }}
+                </h6>
             </div>
         </div>
-    </section>
+    </div>
 </section>

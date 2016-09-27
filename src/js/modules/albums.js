@@ -3,15 +3,14 @@
         module('Albums').
         controller('AlbumsController', AlbumsController);
 
-    AlbumsController.$inject = ['$timeout', 'dataservice'];
+    AlbumsController.$inject = ['dataservice'];
 
-    function AlbumsController($timeout, dataservice) {
+    function AlbumsController(dataservice) {
         const vm = this;
 
         vm.sortAttribute = 'name';
         vm.sortDescending = false;
         vm.dataLoading = true;
-        vm.toggleSortingOrder = toggleSortingOrder;
 
         fetchAlbums();
 
@@ -20,10 +19,6 @@
                 vm.albums = response;
                 vm.dataLoading = false;
             });
-        }
-
-        function toggleSortingOrder() {
-            vm.sortDescending = !vm.sortDescending;
         }
     }
 })();

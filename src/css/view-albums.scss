@@ -1,4 +1,5 @@
 $sortingContainerMaxWidth: 400px;
+$activeSortingItemBackground: linear-gradient($lightestGray, $white);
 
 .albums-header {
     margin: 0 20px;
@@ -36,6 +37,8 @@ $sortingContainerMaxWidth: 400px;
     &.active {
         border: 1px solid $gray;
         border-bottom: 1px solid $white;
+        background: $activeSortingItemBackground;
+        text-shadow: 0 0 1px $lightestGray;
     }
 }
 .order-button {
@@ -49,10 +52,11 @@ $sortingContainerMaxWidth: 400px;
     -webkit-appearance: none;
     outline: none;
     cursor: pointer;
+    background: $activeSortingItemBackground;
 }
 .order-button-background {
     width: 20px;
-    height: 20px;
+    height: 12px;
     margin-top: 4px;
     fill: $black;
     transition: transform .05s;
@@ -60,20 +64,6 @@ $sortingContainerMaxWidth: 400px;
     &.reversed {
         transform: none;
     }
-}
-.albums-view {
-    display: flex;
-    flex-flow: column;
-    height: 100%;
-}
-.albums-list {
-    flex: 1;
-    overflow: auto;
-    position: relative;
-}
-.albums-list-container {
-    height: 100%;
-    overflow: auto;
 }
 .album-container {
     padding: 20px;

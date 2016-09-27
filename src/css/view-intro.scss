@@ -23,6 +23,6 @@ $introMaxWidth: 500px;
         color: $black;
     }
     &:hover {
-        color: $gray;
+        text-shadow: 0 0 0 $gray;
     }
 }
