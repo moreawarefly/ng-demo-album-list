@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
-const connect = require('gulp-connect');
+const browserSync = require('browser-sync');
 const concat = require('gulp-concat');
 const templateCache = require('gulp-angular-templatecache');
 const es = require('event-stream');
@@ -9,6 +9,9 @@ const htmlmin = require('gulp-htmlmin');
 const inlinesource = require('gulp-inline-source');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
+
+const browserSyncContent = browserSync.create();
+const browserSyncMock = browserSync.create();
 
 
 gulp.task('default', ['devServer']);
@@ -33,16 +36,14 @@ gulp.task('populateTmpDirDist', populateTmpDirDist);
 gulp.task('concatJsDist', concatJsDist);
 gulp.task('transpileScssDist', transpileScssDist);
 gulp.task('concatJsDev', concatJsDev);
+gulp.task('concatAndReload', ['concatJsDev'], () => browserSyncContent.reload());
 gulp.task('populateTmpDirDev', populateTmpDirDev);
 gulp.task('transpileScssDev', transpileScssDev);
 gulp.task('serveTmp', serveTmp);
 gulp.task('serveMock', serveMock);
-gulp.task('reload', reload);
-gulp.task('watchHtml', watchHtml);
 gulp.task('watchAngular', watchAngular);
 gulp.task('watchSass', watchSass);
 gulp.task('watch', [
-    'watchHtml',
     'watchAngular',
     'watchSass',
 ]);
@@ -97,7 +98,8 @@ function transpileScssDev() {
         pipe(sourcemaps.init()).
         pipe(sass().on('error', sass.logError)).
         pipe(sourcemaps.write()).
-        pipe(gulp.dest('./.tmp/css'));
+        pipe(gulp.dest('./.tmp/css')).
+        pipe(browserSyncContent.stream());
 }
 function transpileScssDist() {
     gulp.src('./src/css/css.scss').
@@ -108,49 +110,47 @@ function transpileScssDist() {
 }
 
 function serveTmp() {
-    connect.server({
+    browserSyncContent.init({
+        server: {
+            baseDir: '.tmp',
+        },
         port: 9000,
-        root: '.tmp',
-        livereload: true,
+        open: false,
     });
 }
 function serveMock() {
-    connect.server({
+    browserSyncMock.init({
+        server: {
+            baseDir: 'mock',
+            index: 'albums.json',
+        },
+        ui: false,
         port: 9001,
-        root: 'mock',
-        index: 'albums.json',
-        middleware: () => [cors],
+        open: false,
+        middleware: [corsAndDelay],
     });
 }
 function serveBuild() {
-    connect.server({
+    browserSyncContent.init({
+        server: {
+            baseDir: 'dist',
+        },
         port: 9000,
-        root: './dist',
+        open: false,
     });
-}
-
-function reload() {
-    gulp.src('./.tmp/*').
-        pipe(connect.reload());
-}
-
-function watchHtml() {
-    gulp.watch([
-        './src/*.html',
-    ], ['populateTmpDirDev', 'reload']);
 }
 
 function watchAngular() {
     gulp.watch([
         './src/js/**/*.js',
         './src/views/**/*.html',
-    ], ['concatJsDev', 'reload']);
+    ], ['concatAndReload']);
 }
 
 function watchSass() {
     gulp.watch([
         './src/css/*.scss',
-    ], ['transpileScssDev', 'reload']);
+    ], ['transpileScssDev']);
 }
 
 function build() {
@@ -159,7 +159,7 @@ function build() {
         .pipe(gulp.dest('./dist'));
 }
 
-function cors(req, res, next) {
+function corsAndDelay(req, res, next) {
     res.setHeader('Access-Control-Allow-Origin', '*');
     setTimeout(next, 1000);
 }

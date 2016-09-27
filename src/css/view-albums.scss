@@ -76,9 +76,11 @@ $sortingContainerMaxWidth: 400px;
     overflow: auto;
 }
 .album-container {
-    padding-bottom: 10px;
-    margin: 0 20px 20px;;
-    border-bottom: 1px solid $gray;
+    + .album-container{
+        padding-bottom: 10px;
+        margin: 0 20px 20px;;
+        border-bottom: 1px solid $gray;
+    }
 }
 .album-title, .album-artist, .album-release-date {
     margin: 5px 0;
