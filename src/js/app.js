@@ -13,6 +13,7 @@
     angular.module('loader', []);
 
     angular.module('AlbumsApp', [
+        'ngAnimate',
         'ngRoute',
         'templates',
         'Intro',

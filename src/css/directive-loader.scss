@@ -1,19 +1,15 @@
 .loader-wrapper {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: -10;
-    opacity: 0;
-    background-color: rgba(0,0,0,.8);
+    background-color: rgba(255, 255, 255, .9);
     transition: opacity .4s;
-    &.visible {
-        z-index: 10;
-        opacity: 1;
+    &.ng-hide {
+        opacity: 0;
     }
 }
-
 @keyframes rotate {
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
@@ -30,5 +26,5 @@
     animation-duration: 2s; 
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    fill: $white;
+    fill: $black;
 }
