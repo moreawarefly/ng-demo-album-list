@@ -21,7 +21,6 @@ $activeSortingItemBackground: linear-gradient($lightestGray, $white);
         background-color: $gray;
         bottom: 0;
         left: 0;
-        z-index: -1;
     }
 }
 .sorting-option {
@@ -34,6 +33,8 @@ $activeSortingItemBackground: linear-gradient($lightestGray, $white);
     -webkit-appearance: none;
     outline: none;
     cursor: pointer;
+    position: relative;
+    z-index: 1;
     &.active {
         border: 1px solid $gray;
         border-bottom: 1px solid $white;
@@ -59,7 +60,7 @@ $activeSortingItemBackground: linear-gradient($lightestGray, $white);
     height: 12px;
     margin-top: 4px;
     fill: $black;
-    transition: transform .05s;
+    transition: transform .1s;
     transform: rotate(180deg);
     &.reversed {
         transform: none;
@@ -70,10 +71,13 @@ $activeSortingItemBackground: linear-gradient($lightestGray, $white);
     margin: 0 20px;
     padding: 20px 0;
     + .album-container{
-        border-top: 1px solid $gray;
+        border-top: 1px solid $lightGray;
     }
 }
 .album-title, .album-artist, .album-release-date {
     margin: 5px 0;
     padding: 0;
+}
+.album-cover {
+    border: 1px solid $lightestGray;
 }
