@@ -1,11 +1,11 @@
 (() => {
     angular.
-        module('Albums').
-        controller('AlbumsController', AlbumsController);
+        module('albumsApp.albumsList').
+        controller('AlbumsListController', AlbumsListController);
 
-    AlbumsController.$inject = ['dataservice'];
+    AlbumsListController.$inject = ['dataservice'];
 
-    function AlbumsController(dataservice) {
+    function AlbumsListController(dataservice) {
         const vm = this;
 
         vm.sortAttribute = 'name';

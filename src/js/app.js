@@ -3,21 +3,15 @@
     angular.module('templates', []);
 
     // views
-    angular.module('Intro', []);
-    angular.module('Albums', []);
+    angular.module('albumsApp.intro', []);
+    angular.module('albumsApp.albumsList', []);
 
-    // services
-    angular.module('dataservice', []);
-
-    // directives
-    angular.module('loader', []);
-
-    angular.module('AlbumsApp', [
+    angular.module('albumsApp', [
         'ngAnimate',
         'ngRoute',
         'templates',
-        'Intro',
-        'Albums',
+        'albumsApp.intro',
+        'albumsApp.albumsList',
     ]).config(appConfig);
 
     appConfig.$inject = ['$routeProvider'];

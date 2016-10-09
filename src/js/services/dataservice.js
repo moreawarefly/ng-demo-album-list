@@ -1,6 +1,6 @@
 (() => {
     angular.
-        module('AlbumsApp').
+        module('albumsApp').
         service('dataservice', dataservice);
 
     dataservice.$inject = ['$http', '$log'];

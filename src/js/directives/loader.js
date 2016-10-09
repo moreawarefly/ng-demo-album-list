@@ -1,6 +1,6 @@
 (() => {
     angular.
-        module('AlbumsApp').
+        module('albumsApp').
         directive('loader', loader);
 
     loader.$inject = ['$templateCache', '$compile'];
