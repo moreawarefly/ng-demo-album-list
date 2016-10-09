@@ -1,5 +1,6 @@
 $sortingContainerMaxWidth: 400px;
 $activeSortingItemBackground: linear-gradient($lightestGray, $white);
+$sortingStaticElementWidth: 30px;
 
 .albums-header {
     margin: 0 20px;
@@ -10,7 +11,6 @@ $activeSortingItemBackground: linear-gradient($lightestGray, $white);
 }
 .sorting-container {
     position: relative;
-    text-align: left;
     max-width: $sortingContainerMaxWidth;
     margin: 0 auto 20px;
     &:before {
@@ -21,6 +21,51 @@ $activeSortingItemBackground: linear-gradient($lightestGray, $white);
         background-color: $gray;
         bottom: 0;
         left: 0;
+    }
+}
+.filter-icon-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: $sortingStaticElementWidth;
+    height: 100%;
+    z-index: 4;
+    cursor: pointer;
+}
+.filter-icon {
+    position: absolute;
+    width: 14px;
+    top: 22%;
+    left: 50%;
+    margin-left: -7px;
+    opacity: 0.3;
+    transition: opacity .3s;
+    &.active {
+        opacity: 1;
+    }
+}
+.filter-input {
+    position: absolute;
+    padding-left: $sortingStaticElementWidth + 4px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-width: 0;
+    border-bottom: 1px solid $gray;
+    outline: none;
+    // TODO handle this with autoprefixer!
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: width .3s, opacity .2s linear;
+    opacity: 0;
+    width: 0;
+    box-sizing: border-box;
+    z-index: 2;
+    &:focus {
+        width: 100%;
+        opacity: 1;
     }
 }
 .sorting-option {
@@ -54,6 +99,8 @@ $activeSortingItemBackground: linear-gradient($lightestGray, $white);
     outline: none;
     cursor: pointer;
     background: $activeSortingItemBackground;
+    padding: 0;
+    width: $sortingStaticElementWidth;
 }
 .order-button-background {
     width: 20px;
@@ -65,6 +112,25 @@ $activeSortingItemBackground: linear-gradient($lightestGray, $white);
     &.reversed {
         transform: none;
     }
+}
+.clear-filter-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: $sortingStaticElementWidth;
+    -webkit-appearance: none;
+    outline: none;
+    z-index: 5;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+.clear-filter-button-background {
+    width: 10px;
+    height: 10px;
+    margin-top: 4px;
+    fill: $black;
 }
 .album-container {
     padding: 20px;

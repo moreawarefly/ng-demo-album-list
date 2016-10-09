@@ -1,37 +1,69 @@
-<section class="albums-view" ng-controller="AlbumsListController as albums">
-    <header class="albums-header" loader="albums.dataLoading">
-        <h1>Top albums from my last.fm history</h1>
+<section class="albums-view" ng-controller="AlbumsListController as albumsList">
+    <header class="albums-header" loader="albumsList.dataLoading">
+        <h1>top albums from my last.fm history</h1>
         <form class="sorting-form">
-            <label class="order-label">Sorting:</label>
+            <label class="order-label">filter / sort:</label>
             <div class="sorting-container">
+                <label class="filter-icon-label" for="filter-keyword">
+                    <svg
+                        class="filter-icon"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 36 36"
+                        ng-class="{active: albumsList.filterActive || albumsList.filterKeyword}">
+                        <path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789C9.2,24.382,4.81,19.991,4.81,14.593z"/>
+                    </svg>
+                </label>
+                <input
+                    class="filter-input"
+                    type="text"
+                    id="filter-keyword"
+                    ng-model="albumsList.filterKeyword"
+                    ng-focus="albumsList.filterActive = true"
+                    ng-blur="albumsList.filterActive = false"
+                    ng-keydown="albumsList.filterInputKeyHander($event)">
                 <button
                     class="sorting-option"
-                    ng-class="{active: albums.sortAttribute == 'name'}"
-                    ng-click="albums.sortAttribute = 'name'"
+                    ng-class="{active: albumsList.sortAttribute == 'name'}"
+                    ng-click="albumsList.sortAttribute = 'name'"
                     >album
                 </button>
                 <button
                     class="sorting-option"
-                    ng-class="{active: albums.sortAttribute == 'artist.name'}"
-                    ng-click="albums.sortAttribute = 'artist.name'"
+                    ng-class="{active: albumsList.sortAttribute == 'artist.name'}"
+                    ng-click="albumsList.sortAttribute = 'artist.name'"
                     >artist</button>
                 <button
                     class="sorting-option"
-                    ng-class="{active: albums.sortAttribute == 'released'}"
-                    ng-click="albums.sortAttribute = 'released'"
+                    ng-class="{active: albumsList.sortAttribute == 'released'}"
+                    ng-click="albumsList.sortAttribute = 'released'"
                     >release</button>
                 <button 
                     class="order-button"
                     name="order-button"
-                    ng-click="albums.sortDescending = !albums.sortDescending">
+                    ng-click="albumsList.sortDescending = !albumsList.sortDescending">
                     <svg 
                         class="order-button-background"
-                        ng-class="{reversed: albums.sortDescending}"
+                        ng-class="{reversed: albumsList.sortDescending}"
                         viewBox="0 0 512 512"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M 96.00,96.00l-96.00,96.00l 256.00,256.00l 256.00-256.00l-96.00-96.00L 256.00,256.00L 96.00,96.00z" ></path>
                     </svg>
                 </button>
+                <!-- <button 
+                    class="clear-filter-button"
+                    name="clear-filter-button"
+                    ng-show="albumsList.filterActive && albumsList.filterKeyword"
+                    ng-click="albumsList.clearFilterHander">
+                    <svg
+                        class="clear-filter-button-background"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 357 357">
+                        <polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 214.2,178.5"/>
+                    </svg>
+                </button> -->
             </div>
 
         </form>
@@ -41,7 +73,7 @@
     <div class="albums-list-container">
         <div 
             class="album-container"
-            ng-repeat="album in albums.albums | orderBy : albums.sortAttribute : albums.sortDescending">
+            ng-repeat="album in albumsList.albums | orderBy : albumsList.sortAttribute : albumsList.sortDescending | filter: albumsList.filterKeyword as filterResults">
             <a href="{{ ::album.url }}" target="_blank">
                 <img
                     class="album-cover"

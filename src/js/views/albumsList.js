@@ -11,6 +11,10 @@
         vm.sortAttribute = 'name';
         vm.sortDescending = false;
         vm.dataLoading = true;
+        vm.filterKeyword = '';
+        vm.filterActive = false;
+        vm.filterInputKeyHander = filterInputKeyHander;
+        vm.clearFilterHander = clearFilterHander;
 
         fetchAlbums();
 
@@ -19,6 +23,19 @@
                 vm.albums = response;
                 vm.dataLoading = false;
             });
+        }
+
+        function filterInputKeyHander(event) {
+            if (event.key === 'Enter' || event.key === 'Escape') {
+                event.preventDefault();
+                document.querySelector('.filter-input').blur();
+                vm.filterActive = false;
+            }
+        }
+
+        function clearFilterHander() {
+            vm.filterKeyword = '';
+            document.querySelector('.filter-input').blur();
         }
     }
 })();
