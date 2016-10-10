@@ -14,7 +14,6 @@
         vm.filterKeyword = '';
         vm.filterActive = false;
         vm.filterInputKeyHander = filterInputKeyHander;
-        vm.clearFilterHander = clearFilterHander;
 
         fetchAlbums();
 
@@ -31,11 +30,6 @@
                 document.querySelector('.filter-input').blur();
                 vm.filterActive = false;
             }
-        }
-
-        function clearFilterHander() {
-            vm.filterKeyword = '';
-            document.querySelector('.filter-input').blur();
         }
     }
 })();

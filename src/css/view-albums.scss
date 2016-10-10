@@ -45,18 +45,51 @@ $sortingStaticElementWidth: 30px;
         opacity: 1;
     }
 }
+.clear-filter-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 1px;
+    width: $sortingStaticElementWidth;
+    -webkit-appearance: none;
+    outline: none;
+    z-index: 5;
+    border: 0;
+    background-color: $white;
+    cursor: pointer;
+    transition: opacity .05s;
+    &.ng-hide-add {
+        opacity: .5;
+    }
+    &.ng-hide-add-active {
+        opacity: 0;
+    }
+    &.ng-hide-remove {
+        opacity: 0;
+    }
+    &.ng-hide-remove-active {
+        opacity: .5;
+    }
+}
+.clear-filter-button-background {
+    width: 10px;
+    height: 10px;
+    margin-top: 2px;
+    fill: $black;
+}
 .filter-input {
     position: absolute;
     padding-left: $sortingStaticElementWidth + 4px;
     top: 0;
     left: 0;
-    bottom: 0;
+    height: 100%;
     border-width: 0;
     border-bottom: 1px solid $gray;
     outline: none;
     // TODO handle this with autoprefixer!
     -webkit-appearance: none;
     -moz-appearance: none;
+    -webkit-border-radius: 0;
     appearance: none;
     transition: width .3s, opacity .2s linear;
     opacity: 0;
@@ -113,24 +146,14 @@ $sortingStaticElementWidth: 30px;
         transform: none;
     }
 }
-.clear-filter-button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: $sortingStaticElementWidth;
-    -webkit-appearance: none;
-    outline: none;
-    z-index: 5;
-    border: 0;
-    background-color: transparent;
-    cursor: pointer;
+.no-results-container {
+    margin-top: 50px;
+    font-size: 0.8rem;
 }
-.clear-filter-button-background {
-    width: 10px;
-    height: 10px;
-    margin-top: 4px;
-    fill: $black;
+.no-results-keyword {
+    font-weight: bold;
+    padding: 10px;
+    font-size: 1rem;
 }
 .album-container {
     padding: 20px;
