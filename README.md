@@ -3,7 +3,8 @@ Demo app presenting list of albums, written in Angular 1.x based on Gulp build e
 
 Albums list is mocked inside `albums.json` file, which is an actual [last.fm](http://last.fm) API response to request for top listened 100 albums for my user `$ http://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=elomartiniasty&limit=100&api_key=YOUR_API_KEY&format=json`
 
-It is altered with an addition of `released` field to each record which containins mocked album release date.
+Distribution build can be found here:
+[http://marcinskawinski.pl/projekty/topalbums](http://marcinskawinski.pl/projekty/topalbums)
 
 ## Build tasks 
 
