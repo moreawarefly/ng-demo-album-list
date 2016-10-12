@@ -57,7 +57,7 @@ $sortingStaticElementWidth: 30px;
     border: 0;
     background-color: $white;
     cursor: pointer;
-    transition: opacity .05s;
+    transition: opacity .1s;
     &.ng-hide-add {
         opacity: .5;
     }

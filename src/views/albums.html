@@ -4,7 +4,9 @@
         <form class="sorting-form">
             <label class="order-label">filter / sort:</label>
             <div class="sorting-container">
-                <label class="filter-icon-label" for="filter-keyword">
+                <label
+                    class="filter-icon-label" 
+                    for="filter-keyword">
                     <svg
                         class="filter-icon"
                         version="1.1"
@@ -38,20 +40,22 @@
                 </button>
                 <button
                     class="sorting-option"
+                    ng-class="{active: albumsList.sortAttribute == 'playcount'}"
+                    ng-click="albumsList.sortAttribute = 'playcount'">
+                    playcount
+                </button>
+                <button
+                    class="sorting-option"
                     ng-class="{active: albumsList.sortAttribute == 'name'}"
-                    ng-click="albumsList.sortAttribute = 'name'"
-                    >album
+                    ng-click="albumsList.sortAttribute = 'name'">
+                    album
                 </button>
                 <button
                     class="sorting-option"
                     ng-class="{active: albumsList.sortAttribute == 'artist.name'}"
-                    ng-click="albumsList.sortAttribute = 'artist.name'"
-                    >artist</button>
-                <button
-                    class="sorting-option"
-                    ng-class="{active: albumsList.sortAttribute == 'released'}"
-                    ng-click="albumsList.sortAttribute = 'released'"
-                    >playcount</button>
+                    ng-click="albumsList.sortAttribute = 'artist.name'">
+                    artist
+                </button>
                 <button 
                     class="order-button"
                     name="order-button"
@@ -72,7 +76,7 @@
     <div class="albums-list-container">
         <div 
             class="album-container"
-            ng-repeat="album in albumsList.albums | orderBy : albumsList.sortAttribute : albumsList.sortDescending | filter: albumsList.filterKeyword as filterResults">
+            ng-repeat="album in albumsList.albums | orderBy : albumsList.sortAttribute : albumsList.sortDescending | filter: albumsList.filterFunction as filterResults">
             <a href="{{ ::album.url }}" target="_blank">
                 <img
                     class="album-cover"
@@ -80,11 +84,10 @@
                     alt="{{ ::album.name }}">
             </a>
             <div class="album-details">
-                <h2 class="album-title">
-                    {{ ::album.name }}
-                </h2>
+                <h2 class="album-title" ng-bind-html="album.name | highlight: albumsList.filterKeyword"></h2>
                 <h5 class="album-artist">
-                    <span class="pale-label">By:</span> {{ ::album.artist.name }}
+                    <span class="pale-label">By:</span>
+                    <span ng-bind-html="album.artist.name | highlight: albumsList.filterKeyword"></span>
                 </h5>
                 <h6 class="album-release-date">
                     <span class="pale-label">Playcount:</span> {{ ::album.playcount }}

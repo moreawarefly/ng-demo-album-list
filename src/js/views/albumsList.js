@@ -8,12 +8,13 @@
     function AlbumsListController(dataservice) {
         const vm = this;
 
-        vm.sortAttribute = 'name';
-        vm.sortDescending = false;
+        vm.sortAttribute = 'playcount';
+        vm.sortDescending = true;
         vm.dataLoading = true;
         vm.filterKeyword = '';
         vm.filterActive = false;
         vm.filterInputKeyHander = filterInputKeyHander;
+        vm.filterFunction = filterFunction;
 
         fetchAlbums();
 
@@ -30,6 +31,11 @@
                 document.querySelector('.filter-input').blur();
                 vm.filterActive = false;
             }
+        }
+
+        function filterFunction(item) {
+            return item.name.toLowerCase().indexOf(vm.filterKeyword.toLowerCase()) !== -1 ||
+                item.artist.name.toLowerCase().indexOf(vm.filterKeyword.toLowerCase()) !== -1;
         }
     }
 })();
